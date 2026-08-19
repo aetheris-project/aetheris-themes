@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "Theme guide and validator for the Aetheris platform"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "Proprietary" }
+license = { file = "LICENSE" }
 
 [project.scripts]
 aetheris-theme-validate = "tools.validate:main"
