@@ -1,0 +1,17 @@
+[project]
+name = "aetheris-themes"
+version = "1.0.0"
+description = "Theme guide and validator for the Aetheris platform"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+
+[project.scripts]
+aetheris-theme-validate = "tools.validate:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

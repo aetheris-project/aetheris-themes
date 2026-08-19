@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Your Brand",
+    "tagline": "Your one-line platform description",
+    "logoUrl": "/brand/your-mark.svg",
+    "logoDarkUrl": "/brand/your-mark.svg",
+    "domain": "panel.yourbrand.com"
+  },
+  "theme": {
+    "accent": "emerald",
+    "radius": 10,
+    "fontFamily": ""
+  },
+  "navigation": [
+    { "label": "Product", "href": "#product", "cta": false },
+    { "label": "Live Demo", "href": "/demo", "cta": false },
+    { "label": "Documentation", "href": "https://docs.yourbrand.com", "cta": false },
+    { "label": "Open Console", "href": "https://app.yourbrand.com", "cta": true }
+  ],
+  "contact": {
+    "email": "ops@yourbrand.com",
+    "supportUrl": "https://support.yourbrand.com",
+    "twitterUrl": "https://x.com/yourbrand"
+  },
+  "seo": {
+    "defaultTitle": "Your Brand - Billing and Virtualization Control Plane",
+    "defaultDescription": "Your brand description.",
+    "ogImage": "/api/og",
+    "keywords": ["billing platform", "virtualization", "hosting"]
+  },
+  "modules": {
+    "billing": true,
+    "vncConsole": true,
+    "pterodactyl": true,
+    "proxmox": true,
+    "virtfusion": true,
+    "registrars": true
+  },
+  "integrations": {
+    "stripe": true,
+    "paypal": true,
+    "mollie": true,
+    "namecheap": true,
+    "cloudflare": true,
+    "cpanel": true,
+    "directadmin": true
+  }
+}

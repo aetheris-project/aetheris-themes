@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Aurora",
+    "tagline": "Managed cloud for creators and studios",
+    "logoUrl": "/brand/aurora-mark.svg",
+    "logoDarkUrl": "/brand/aurora-mark.svg",
+    "domain": "panel.aurora.host"
+  },
+  "theme": {
+    "accent": "violet",
+    "radius": 12,
+    "fontFamily": ""
+  },
+  "navigation": [
+    { "label": "Product", "href": "#product", "cta": false },
+    { "label": "Servers", "href": "/servers", "cta": false },
+    { "label": "Documentation", "href": "https://docs.aurora.host", "cta": false },
+    { "label": "Open Console", "href": "https://app.aurora.host", "cta": true }
+  ],
+  "contact": {
+    "email": "ops@aurora.host",
+    "supportUrl": "https://support.aurora.host",
+    "twitterUrl": "https://x.com/aurorahost"
+  },
+  "seo": {
+    "defaultTitle": "Aurora - Managed Cloud Platform",
+    "defaultDescription": "Aurora manages billing, game servers and cloud workloads on a white-labeled control plane.",
+    "ogImage": "/api/og",
+    "keywords": ["game servers", "managed cloud", "billing"]
+  },
+  "modules": {
+    "billing": true,
+    "vncConsole": true,
+    "pterodactyl": true,
+    "proxmox": false,
+    "virtfusion": true,
+    "registrars": false
+  },
+  "integrations": {
+    "stripe": true,
+    "paypal": false,
+    "mollie": true,
+    "namecheap": false,
+    "cloudflare": true,
+    "cpanel": false,
+    "directadmin": false
+  }
+}
