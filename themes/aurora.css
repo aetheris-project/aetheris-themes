@@ -1,0 +1,78 @@
+/*
+ * Aurora theme - custom accent example.
+ *
+ * Companion stylesheet for themes/aurora.json. This theme registers a new
+ * runtime accent ("violet") alongside the default emerald accent and ships
+ * a complete violet-tinted palette for both dark and light mode.
+ */
+
+:root {
+  /* ------------------------------------------------------------------ */
+  /* Neutral surfaces (violet-tinted dark)                               */
+  /* ------------------------------------------------------------------ */
+
+  --aetheris-bg: 12 10 20; /* page background */
+  --aetheris-surface: 24 21 38; /* card background */
+  --aetheris-raised: 31 27 48; /* raised/hover background, chips */
+
+  /* ------------------------------------------------------------------ */
+  /* Lines                                                               */
+  /* ------------------------------------------------------------------ */
+
+  --aetheris-border: 47 42 66; /* hairline borders and dividers */
+
+  /* ------------------------------------------------------------------ */
+  /* Text                                                                */
+  /* ------------------------------------------------------------------ */
+
+  --aetheris-fg: 250 250 252; /* primary text */
+  --aetheris-muted: 168 163 186; /* secondary text */
+  --aetheris-faint: 120 116 140; /* tertiary text, captions */
+
+  /* ------------------------------------------------------------------ */
+  /* Semantic colors                                                     */
+  /* ------------------------------------------------------------------ */
+
+  --aetheris-success: 16 185 129; /* online, paid, healthy */
+  --aetheris-danger: 239 68 68; /* offline, overdue, failed */
+  --aetheris-warning: 245 158 11; /* pending, draining */
+
+  /* ------------------------------------------------------------------ */
+  /* Accent: violet (the Aurora brand accent)                            */
+  /* ------------------------------------------------------------------ */
+
+  --aetheris-accent: 139 92 246; /* violet-500 */
+  --aetheris-accent-strong: 109 40 217; /* violet-600 */
+  --aetheris-accent-soft: rgba(139, 92, 246, 0.12); /* accent wash */
+
+  /* ------------------------------------------------------------------ */
+  /* Shape                                                               */
+  /* ------------------------------------------------------------------ */
+
+  --aetheris-radius: 12px; /* slightly rounder cards for Aurora */
+}
+
+/* ------------------------------------------------------------------ */
+/* Registered runtime accents                                           */
+/* ------------------------------------------------------------------ */
+
+[data-accent="violet"] {
+  --aetheris-accent: 139 92 246;
+  --aetheris-accent-strong: 109 40 217;
+  --aetheris-accent-soft: rgba(139, 92, 246, 0.12);
+}
+
+/* ------------------------------------------------------------------ */
+/* Light mode override                                                  */
+/* ------------------------------------------------------------------ */
+
+[data-theme="light"] {
+  --aetheris-bg: 248 247 252;
+  --aetheris-surface: 255 255 255;
+  --aetheris-raised: 243 241 249;
+  --aetheris-border: 228 225 236;
+  --aetheris-fg: 24 23 31;
+  --aetheris-muted: 82 79 95;
+  --aetheris-faint: 113 109 130;
+  --aetheris-accent-soft: rgba(139, 92, 246, 0.1);
+}

@@ -40,7 +40,7 @@ with no code changes.
 
 ```bash
 # Validate the shipped themes (all must pass)
-python tools/validate.py themes/*.json templates/theme.template.css
+python tools/validate.py themes/*.json themes/*.css templates/theme.template.css
 
 # Create your own theme from the templates
 cp templates/theme.template.json themes/my-theme.json
@@ -81,7 +81,8 @@ aetheris-themes/
 │   ├── emerald.json          # Platform default accent
 │   ├── indigo.json
 │   ├── amber.json
-│   └── aurora.json           # Custom accent + rebranded identity
+│   ├── aurora.json           # Custom violet accent + rebranded identity
+│   └── aurora.css            # The violet accent block + light mode
 ├── tools/
 │   ├── validate.py           # Schema + token validator (stdlib)
 │   └── generate_themes.py    # Regenerates the standard themes
