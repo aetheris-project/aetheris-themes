@@ -24,7 +24,7 @@
   },
   "seo": {
     "defaultTitle": "Aurora - Managed Cloud Platform",
-    "defaultDescription": "Aurora manages billing, game servers and cloud workloads on a white-labeled control plane.",
+    "defaultDescription": "Aurora manages billing, game servers and cloud workloads on a white-labeled control panel.",
     "ogImage": "/api/og",
     "keywords": ["game servers", "managed cloud", "billing"]
   },

@@ -4,7 +4,7 @@
 
 1. `WhitelabelProvider` (in `aetheris-website/lib/theme`) loads the
    whitelabel JSON - either the static default or the remote
-   `NEXT_PUBLIC_WHITELABEL_URL` endpoint served by the control plane.
+   `NEXT_PUBLIC_WHITELABEL_URL` endpoint served by the control panel.
 2. It writes `data-accent` on `document.documentElement`, which activates
    the matching `[data-accent="..."]` CSS block.
 3. A theme toggle writes `data-theme="light"` or `"dark"` (or removes it

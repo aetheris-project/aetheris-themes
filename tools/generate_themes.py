@@ -18,7 +18,7 @@ OUT_DIR = ROOT / "themes"
 STANDARD = {
     "emerald": {
         "name": "Aetheris",
-        "tagline": "Billing and virtualization control plane for the enterprise",
+        "tagline": "Billing and virtualization control panel for the enterprise",
         "domain": "aetheris.enterprise",
         "email": "ops@aetheris.enterprise",
         "support": "https://support.aetheris.enterprise",
@@ -27,7 +27,7 @@ STANDARD = {
     },
     "indigo": {
         "name": "Aetheris",
-        "tagline": "Billing and virtualization control plane for the enterprise",
+        "tagline": "Billing and virtualization control panel for the enterprise",
         "domain": "aetheris.enterprise",
         "email": "ops@aetheris.enterprise",
         "support": "https://support.aetheris.enterprise",
@@ -36,7 +36,7 @@ STANDARD = {
     },
     "amber": {
         "name": "Aetheris",
-        "tagline": "Billing and virtualization control plane for the enterprise",
+        "tagline": "Billing and virtualization control panel for the enterprise",
         "domain": "aetheris.enterprise",
         "email": "ops@aetheris.enterprise",
         "support": "https://support.aetheris.enterprise",

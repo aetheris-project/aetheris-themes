@@ -1,7 +1,7 @@
 # Aetheris theming guide
 
 The Aetheris platform is token-driven: every color, radius and font used by
-the website, the demo panels, the docs and the control plane flows from a
+the website, the demo panels, the docs and the control panel flows from a
 small set of CSS variables and a runtime whitelabel configuration. This
 repository is the complete reference for creating, validating and shipping
 your own theme.

@@ -1,6 +1,6 @@
 # Publishing a theme
 
-A theme is published by serving its whitelabel JSON from the control plane.
+A theme is published by serving its whitelabel JSON from the control panel.
 The Admin Panel stores the configuration in PostgreSQL (cached in Redis)
 and exposes it at `GET /api/whitelabel`. The marketing site and client
 portal fetch it when `NEXT_PUBLIC_WHITELABEL_URL` points at that endpoint,
@@ -59,7 +59,7 @@ and merge it over the static defaults at runtime - no rebuild.
 ## Serving the config
 
 - Development: set `NEXT_PUBLIC_WHITELABEL_URL` on the website to the
-  control plane's `https://app.example.com/api/whitelabel`.
+  control panel's `https://app.example.com/api/whitelabel`.
 - Production: the Admin Panel persists the config and serves it from the
   same endpoint, cached in Redis with a short TTL.
 

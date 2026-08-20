@@ -19,7 +19,7 @@
 
 The complete reference for creating, validating and shipping themes for the
 Aetheris platform. Everything the platform renders - marketing site, demo
-panels, docs and control plane - is driven by a small set of CSS tokens and
+panels, docs and control panel - is driven by a small set of CSS tokens and
 a runtime whitelabel document, so a new theme restyles the entire platform
 with no code changes.
 

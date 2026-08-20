@@ -23,7 +23,7 @@
     "twitterUrl": "https://x.com/yourbrand"
   },
   "seo": {
-    "defaultTitle": "Your Brand - Billing and Virtualization Control Plane",
+    "defaultTitle": "Your Brand - Billing and Virtualization Control Panel",
     "defaultDescription": "Your brand description.",
     "ogImage": "/api/og",
     "keywords": ["billing platform", "virtualization", "hosting"]
