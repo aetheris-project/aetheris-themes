@@ -1,101 +1,195 @@
 <p align="center">
-  <img src="assets/icon.svg" alt="Aetheris Themes" width="88">
+  <img src="assets/icon.svg" alt="Aetheris Themes" width="88" style="filter: drop-shadow(0 0 20px rgba(139,92,246,0.55))">
 </p>
 
 <h1 align="center">Aetheris Themes</h1>
 
 <p align="center">
-  <strong>Theme guide, templates and validator for the Aetheris platform</strong>
+  <strong>Design tokens, theme templates, ready-made palettes and a CSS-token validator for the entire Aetheris platform</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+">
-  <img src="https://img.shields.io/badge/token--driven-CSS%20variables-06B6D4" alt="Token-driven">
-  <img src="https://img.shields.io/badge/dark%2Flight%2Fsystem-supported-success" alt="Theme modes">
-  <img src="https://img.shields.io/badge/tests-passing-success" alt="Tests passing">
+  <a href="https://aetheris-docs.vercel.app/wiki/theming"><img src="https://img.shields.io/badge/Docs-Theming-0EA5E9?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Docs"></a>
+  <a href="https://aetheris-docs.vercel.app/wiki/theming-tokens"><img src="https://img.shields.io/badge/Reference-Tokens-8B5CF6?style=for-the-badge&logo=css3&logoColor=white" alt="Tokens"></a>
+  <a href="https://discord.gg/6GcfebuT2A"><img src="https://img.shields.io/badge/Discord-Help-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Token--Driven-CSS%20Vars-06B6D4?style=flat-square" alt="Tokens">
+  <img src="https://img.shields.io/badge/Dark%2FLight%2FSystem-All%20Supported-10B981?style=flat-square" alt="Themes">
+  <img src="https://img.shields.io/badge/Runtime-Whitelabel-F59E0B?style=flat-square" alt="Runtime">
+  <img src="https://img.shields.io/badge/WCAG-Contrast%20Hints-EC4899?style=flat-square" alt="WCAG">
+  <img src="https://img.shields.io/badge/Tests-Passing-10B981?style=flat-square" alt="Tests">
 </p>
 
 ---
 
-The complete reference for creating, validating and shipping themes for the
-Aetheris platform. Everything the platform renders - marketing site, demo
-panels, docs and control panel - is driven by a small set of CSS tokens and
-a runtime whitelabel document, so a new theme restyles the entire platform
-with no code changes.
+<br>
 
-## What you get
+> **Everything in Aetheris — marketing site, control panel, wiki, demo panels
+> and even the terminal UI — reads from the same small set of CSS custom
+> properties.** Swap one JSON document at runtime (the *whitelabel payload*)
+> and the ENTIRE platform restyles itself with **zero code changes**. This
+> repository is the reference: token definitions, ready-made palettes,
+> fill-in templates, a contrast-aware validator and the full authoring guide.
 
-- **Guide** (`docs/`) - the token system, how themes are applied, the
-  Tailwind mapping and how to publish a theme at runtime.
-- **Templates** (`templates/`) - a fill-in theme CSS with every required
-  token and a complete whitelabel JSON document.
-- **Ready-made themes** (`themes/`) - `emerald`, `indigo` and `amber`
-  matching the platform defaults, plus `aurora`, a custom example with a
-  violet accent and rebranded identity.
-- **Validator** (`tools/validate.py`) - checks the JSON against the
-  whitelabel schema and the CSS against the required token set, with
-  contrast hints.
+<br>
 
-## Quick start
+## ✨ What's Inside
+
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <h3>📚 Full guide</h3>
+      <p>Five Markdown chapters in <code>docs/</code> covering token model → runtime application → Tailwind mapping → publishing.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>📝 Templates</h3>
+      <p><code>theme.template.css</code> — every required token commented.<br><code>theme.template.json</code> — full whitelabel manifest.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>🎨 5 pre-built</h3>
+      <p>
+        💚 Emerald (default)<br>
+        💙 Indigo · 🧡 Amber<br>
+        🌌 Aurora (custom violet + full rebrand example)
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <h3>✅ Validator</h3>
+      <p>Checks JSON schema + CSS token set + WCAG contrast hints. Zero stdlib-only Python, no Node needed.</p>
+    </td>
+    <td align="center" valign="top">
+      <h3>⚡ Runtime selectable</h3>
+      <p>Accent switcher uses <code>data-accent</code>. Light/dark mode uses <code>data-theme</code>. Both toggle instantly.</p>
+    </td>
+    <td align="center" valign="top">
+      <h3>🧱 Tailwind mapped</h3>
+      <p>Every token aliased to <code>bg-surface / border-edge / text-accent / rounded-2xl</code> utilities. Pure utility, no classes to learn.</p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+## 🚀 Quick Start
 
 ```bash
-# Validate the shipped themes (all must pass)
-python tools/validate.py themes/*.json themes/*.css templates/theme.template.css
+# 1. Validate the bundled palettes — all should PASS
+python tools/validate.py \
+  themes/*.json themes/*.css templates/theme.template.css
 
-# Create your own theme from the templates
-cp templates/theme.template.json themes/my-theme.json
-cp templates/theme.template.css themes/my-theme.css
-# edit both, then:
-python tools/validate.py themes/my-theme.json themes/my-theme.css
+# 2. Copy the starter templates into a new theme
+cp templates/theme.template.json themes/my-brand.json
+cp templates/theme.template.css  themes/my-brand.css
+
+# 3. Edit tokens in my-brand.css + brand metadata in my-brand.json
+#    (see docs/tokens.md for every variable's role)
+
+# 4. Validate the result — schema + tokens + contrast hints
+python tools/validate.py themes/my-brand.json themes/my-brand.css
+
+# 5. Register the accent at runtime → data-accent="my-brand" in <html>
+#    or publish via the Admin → Whitelabel UI in the control panel.
 ```
 
-## The token model
+<br>
 
-| Group | Tokens | Role |
-| --- | --- | --- |
-| Surfaces | `--aetheris-bg`, `--aetheris-surface`, `--aetheris-raised` | Page, cards, raised |
-| Lines | `--aetheris-border` | Borders and dividers |
-| Text | `--aetheris-fg`, `--aetheris-muted`, `--aetheris-faint` | Primary / secondary / captions |
-| Semantic | `--aetheris-success`, `--aetheris-warning`, `--aetheris-danger` | States |
-| Accent | `--aetheris-accent`, `--aetheris-accent-strong`, `--aetheris-accent-soft` | Brand |
-| Shape | `--aetheris-radius` | Corner radius |
+## 🎨 Token Model
 
-Accent is selectable at runtime via `data-accent` (emerald / indigo /
-amber, or a custom registered accent); light and dark mode switch with
-`data-theme`. Full reference: [docs/tokens.md](docs/tokens.md).
+| Group | Tokens | Purpose |
+|---|---|---|
+| **Surfaces** | `--aetheris-bg` · `--aetheris-surface` · `--aetheris-raised` | Page canvas · cards · elevated chips |
+| **Lines** | `--aetheris-border` · `--aetheris-border-strong` | Dividers · inputs · focused states |
+| **Text** | `--aetheris-fg` · `--aetheris-muted` · `--aetheris-faint` | Primary · secondary · captions / disabled |
+| **Semantic** | `--aetheris-success` · `--aetheris-warning` · `--aetheris-danger` | States + badges |
+| **Accent** | `--aetheris-accent` · `--aetheris-accent-strong` · `--aetheris-accent-soft` | Brand color, gradient endpoints |
+| **Shape** | `--aetheris-radius` · `--aetheris-radius-sm` | Card / input radii — `0` = square UI |
 
-## Repository layout
+Full authoritative reference: [docs/tokens.md](docs/tokens.md).
+
+<br>
+
+## 🌌 Aurora Showcase
+
+`aurora` is a complete rebrand example (not just an accent) demonstrating
+**every layer of the theming model**:
+
+```css
+/* themes/aurora.css — key highlights */
+:root[data-accent="aurora"] {
+  --aetheris-accent:        #a78bfa;  /* violet base */
+  --aetheris-accent-strong: #7c3aed;
+  --aetheris-accent-soft:   #c4b5fd33;
+  --aetheris-radius:        18px;     /* rounded UI */
+  --aetheris-bg:            #0b0720;  /* deep nebula background */
+}
+```
+
+Load it via `data-accent="aurora"` on the `<html>` element, or drop the
+matching `aurora.json` into the control-panel **Whitelabel** editor.
+
+<br>
+
+## 🧩 Repository Layout
 
 ```text
 aetheris-themes/
 ├── docs/
-│   ├── index.md              # Guide landing
-│   ├── tokens.md             # CSS token reference
-│   ├── theming.md            # How themes are applied at runtime
-│   ├── tailwind.md           # Token to Tailwind utility mapping
-│   └── publishing.md         # Whitelabel JSON schema + serving
+│   ├── index.md           # Guide landing · overview + quick tour
+│   ├── tokens.md          # Full CSS token reference (the bible)
+│   ├── theming.md         # How tokens are applied at runtime (data-accent, data-theme)
+│   ├── tailwind.md        # Design-token → Tailwind utility mapping
+│   └── publishing.md      # Whitelabel JSON schema + API endpoint for publishing
 ├── templates/
-│   ├── theme.template.css    # Required tokens, accents, light mode
-│   └── theme.template.json   # Full whitelabel schema
+│   ├── theme.template.css # Fill-in starter with every token + comments
+│   └── theme.template.json# Whitelabel manifest: fonts, logo, copy, accent IDs
 ├── themes/
-│   ├── emerald.json          # Platform default accent
-│   ├── indigo.json
-│   ├── amber.json
-│   ├── aurora.json           # Custom violet accent + rebranded identity
-│   └── aurora.css            # The violet accent block + light mode
+│   ├── emerald.json       # 💚 Platform default accent
+│   ├── indigo.json        # 💙 Deep-blue accent
+│   ├── amber.json         # 🧡 Warm amber accent
+│   ├── aurora.json        # 🌌 Full rebrand example (violet)
+│   └── aurora.css         # Aurora token block + light/dark overrides
 ├── tools/
-│   ├── validate.py           # Schema + token validator (stdlib)
-│   └── generate_themes.py    # Regenerates the standard themes
-└── tests/                    # Validator unit tests
+│   ├── validate.py        # Stdlib validator: schema ✓ token coverage ✓ WCAG contrast hints ✓
+│   └── generate_themes.py # Regenerates the standard three accent JSONs
+└── tests/                 # Validator unit tests
 ```
 
-## Tests
+<br>
+
+## 🧪 Tests
 
 ```bash
 python -m pip install pytest
 python -m pytest -q
 ```
 
-## License
+---
 
-Aetheris is licensed under the [GNU Affero General Public License v3.0](LICENSE.md) (AGPL-3.0). You may use, study, modify and redistribute it for any purpose, provided that any distributed or network-served modified version keeps this license, preserves the copyright notice of the original author (Leonardo Galli / Leo-Galli) and releases its source code under AGPL-3.0. The Aetheris core and the author's credit may not be removed.
+<p align="center">
+  <strong>Made with 💚 by <a href="https://github.com/Leo-Galli">Leonardo Galli</a></strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/aetheris-project/aetheris-app">App</a>
+  ·
+  <a href="https://github.com/aetheris-project/aetheris-docs">Docs</a>
+  ·
+  <a href="https://github.com/aetheris-project/aetheris-website">Website</a>
+  ·
+  <a href="https://discord.gg/6GcfebuT2A">Discord</a>
+  ·
+  <a href="https://paypal.me/LeonardoGalliITA">Donate</a>
+</p>
+
+## 📄 License
+
+Licensed under **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+See [LICENSE.md](LICENSE.md). You may use, study, modify and redistribute
+for any purpose provided distributed or network-served modified versions
+keep this license, preserve Leonardo Galli's copyright notice and release
+source under AGPL-3.0. The Aetheris core and author credit may not be removed.
