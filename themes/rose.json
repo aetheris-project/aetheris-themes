@@ -1,10 +1,10 @@
 {
   "brand": {
-    "name": "Your Brand",
-    "tagline": "Game server hosting platform powered by Aetheris",
-    "logoUrl": "/brand/your-mark.svg",
-    "logoDarkUrl": "/brand/your-mark.svg",
-    "domain": "yourbrand.com"
+    "name": "PixelNodes",
+    "tagline": "Game server hosting with instant provisioning",
+    "logoUrl": "/icon.svg",
+    "logoDarkUrl": "/icon.svg",
+    "domain": "panel.pixelnodes.gg"
   },
   "theme": {
     "accent": "rose",
@@ -12,27 +12,27 @@
     "fontFamily": ""
   },
   "navigation": [
-    { "label": "Product", "href": "#product", "cta": false },
-    { "label": "Pricing", "href": "#pricing", "cta": false },
-    { "label": "Documentation", "href": "https://docs.yourbrand.com", "cta": false },
-    { "label": "Open Panel", "href": "https://panel.yourbrand.com", "cta": true }
+    { "label": "Servers", "href": "#servers", "cta": false },
+    { "label": "Games", "href": "/games", "cta": false },
+    { "label": "Docs", "href": "https://docs.pixelnodes.gg", "cta": false },
+    { "label": "Panel", "href": "https://panel.pixelnodes.gg", "cta": true }
   ],
   "contact": {
-    "email": "hello@yourbrand.com",
-    "supportUrl": "https://yourbrand.com/support",
-    "twitterUrl": "https://x.com/yourbrand"
+    "email": "hello@pixelnodes.gg",
+    "supportUrl": "https://pixelnodes.gg/support",
+    "twitterUrl": "https://x.com/pixelnodesgg"
   },
   "seo": {
-    "defaultTitle": "Your Brand - Game Server Hosting",
-    "defaultDescription": "Enterprise game server hosting with automatic provisioning, billing and management.",
+    "defaultTitle": "PixelNodes - Game Server Hosting",
+    "defaultDescription": "Instant game server hosting with Pterodactyl integration, automatic provisioning and billing.",
     "ogImage": "/api/og",
-    "keywords": ["game server hosting", "minecraft hosting", "pterodactyl", "billing platform"]
+    "keywords": ["game server hosting", "minecraft hosting", "pterodactyl", "game servers"]
   },
   "modules": {
     "billing": true,
     "vncConsole": true,
     "pterodactyl": true,
-    "proxmox": true,
+    "proxmox": false,
     "virtfusion": false,
     "registrars": false
   },

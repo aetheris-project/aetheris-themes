@@ -1,10 +1,10 @@
 {
   "brand": {
-    "name": "CloudStack",
-    "tagline": "Cloud VPS management and billing for the enterprise",
-    "logoUrl": "/brand/your-mark.svg",
-    "logoDarkUrl": "/brand/your-mark.svg",
-    "domain": "cloudstack.io"
+    "name": "StratoCloud",
+    "tagline": "Cloud VPS infrastructure with Proxmox VE and VirtFusion",
+    "logoUrl": "/icon.svg",
+    "logoDarkUrl": "/icon.svg",
+    "domain": "panel.stratocloud.dev"
   },
   "theme": {
     "accent": "sky",
@@ -12,21 +12,21 @@
     "fontFamily": ""
   },
   "navigation": [
-    { "label": "Platform", "href": "#platform", "cta": false },
-    { "label": "Docs", "href": "https://docs.cloudstack.io", "cta": false },
-    { "label": "Status", "href": "https://status.cloudstack.io", "cta": false },
-    { "label": "Open Console", "href": "https://console.cloudstack.io", "cta": true }
+    { "label": "Cloud", "href": "#cloud", "cta": false },
+    { "label": "Pricing", "href": "/pricing", "cta": false },
+    { "label": "Docs", "href": "https://docs.stratocloud.dev", "cta": false },
+    { "label": "Console", "href": "https://console.stratocloud.dev", "cta": true }
   ],
   "contact": {
-    "email": "hello@cloudstack.io",
-    "supportUrl": "https://cloudstack.io/support",
-    "twitterUrl": "https://x.com/cloudstack"
+    "email": "hello@stratocloud.dev",
+    "supportUrl": "https://stratocloud.dev/support",
+    "twitterUrl": "https://x.com/stratoclouddev"
   },
   "seo": {
-    "defaultTitle": "CloudStack - Cloud VPS Management Platform",
-    "defaultDescription": "Unified cloud VPS management, billing and provisioning. Powered by Proxmox VE and VirtFusion.",
+    "defaultTitle": "StratoCloud - Cloud VPS Infrastructure",
+    "defaultDescription": "Cloud VPS management, provisioning and billing powered by Proxmox VE and VirtFusion.",
     "ogImage": "/api/og",
-    "keywords": ["cloud vps", "vps management", "proxmox ve", "billing platform", "cloud hosting"]
+    "keywords": ["cloud vps", "proxmox ve", "virtfusion", "vps management", "cloud hosting"]
   },
   "modules": {
     "billing": true,

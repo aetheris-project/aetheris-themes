@@ -1,15 +1,15 @@
 {
   "brand": {
     "name": "IronVault",
-    "tagline": "Enterprise dedicated server management and billing",
-    "logoUrl": "/brand/your-mark.svg",
-    "logoDarkUrl": "/brand/your-mark.svg",
-    "domain": "ironvault.dev"
+    "tagline": "Enterprise dedicated server management",
+    "logoUrl": "/icon.svg",
+    "logoDarkUrl": "/icon.svg",
+    "domain": "panel.ironvault.dev"
   },
   "theme": {
     "accent": "crimson",
     "radius": 6,
-    "fontFamily": "JetBrains Mono, monospace"
+    "fontFamily": "JetBrains Mono, ui-monospace, monospace"
   },
   "navigation": [
     { "label": "Platform", "href": "#platform", "cta": false },
@@ -20,13 +20,13 @@
   "contact": {
     "email": "ops@ironvault.dev",
     "supportUrl": "https://ironvault.dev/support",
-    "twitterUrl": "https://x.com/ironvault"
+    "twitterUrl": "https://x.com/ironvaultdev"
   },
   "seo": {
     "defaultTitle": "IronVault - Enterprise Server Management",
-    "defaultDescription": "Dedicated server provisioning, billing and management for enterprise hosting operations.",
+    "defaultDescription": "Dedicated server provisioning, billing and management with full hypervisor support.",
     "ogImage": "/api/og",
-    "keywords": ["dedicated servers", "enterprise hosting", "server management", "billing platform"]
+    "keywords": ["dedicated servers", "enterprise hosting", "server management", "billing"]
   },
   "modules": {
     "billing": true,

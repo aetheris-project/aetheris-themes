@@ -1,68 +1,48 @@
 {
   "brand": {
-    "name": "Aetheris",
-    "tagline": "Billing and virtualization control panel for the enterprise",
-    "logoUrl": "/brand/your-mark.svg",
-    "logoDarkUrl": "/brand/your-mark.svg",
-    "domain": "aetheris.enterprise"
+    "name": "HostForge",
+    "tagline": "Premium managed hosting for businesses",
+    "logoUrl": "/icon.svg",
+    "logoDarkUrl": "/icon.svg",
+    "domain": "panel.hostforge.io"
   },
   "theme": {
     "accent": "amber",
-    "radius": 10,
+    "radius": 8,
     "fontFamily": ""
   },
   "navigation": [
-    {
-      "label": "Product",
-      "href": "#product",
-      "cta": false
-    },
-    {
-      "label": "Live Demo",
-      "href": "/demo",
-      "cta": false
-    },
-    {
-      "label": "Documentation",
-      "href": "https://docs.yourbrand.com",
-      "cta": false
-    },
-    {
-      "label": "Open Console",
-      "href": "https://app.yourbrand.com",
-      "cta": true
-    }
+    { "label": "Hosting", "href": "#hosting", "cta": false },
+    { "label": "Plans", "href": "/plans", "cta": false },
+    { "label": "Support", "href": "https://hostforge.io/support", "cta": false },
+    { "label": "Client Area", "href": "https://client.hostforge.io", "cta": true }
   ],
   "contact": {
-    "email": "ops@aetheris.enterprise",
-    "supportUrl": "https://support.aetheris.enterprise",
-    "twitterUrl": "https://x.com/aetheris"
+    "email": "support@hostforge.io",
+    "supportUrl": "https://hostforge.io/support",
+    "twitterUrl": "https://x.com/hostforgeio"
   },
   "seo": {
-    "defaultTitle": "Your Brand - Billing and Virtualization Control Panel",
-    "defaultDescription": "Your brand description.",
+    "defaultTitle": "HostForge - Premium Managed Hosting",
+    "defaultDescription": "Managed VPS, dedicated servers and game hosting with automated billing and provisioning.",
     "ogImage": "/api/og",
-    "keywords": [
-      "billing platform",
-      "virtualization",
-      "hosting"
-    ]
+    "keywords": ["managed hosting", "vps hosting", "game servers", "billing platform"]
   },
   "modules": {
     "billing": true,
     "vncConsole": true,
     "pterodactyl": true,
     "proxmox": true,
-    "virtfusion": true,
+    "virtfusion": false,
     "registrars": true
   },
   "integrations": {
     "stripe": true,
     "paypal": true,
-    "mollie": true,
+    "mollie": false,
     "namecheap": true,
     "cloudflare": true,
     "cpanel": true,
-    "directadmin": true
+    "directadmin": false
   }
 }

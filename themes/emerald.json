@@ -1,10 +1,10 @@
 {
   "brand": {
     "name": "Aetheris",
-    "tagline": "Billing and virtualization control panel for the enterprise",
-    "logoUrl": "/brand/your-mark.svg",
-    "logoDarkUrl": "/brand/your-mark.svg",
-    "domain": "aetheris.enterprise"
+    "tagline": "Open-source billing and virtualization control panel",
+    "logoUrl": "/icon.svg",
+    "logoDarkUrl": "/icon.svg",
+    "domain": "panel.aetheris.dev"
   },
   "theme": {
     "accent": "emerald",
@@ -12,41 +12,21 @@
     "fontFamily": ""
   },
   "navigation": [
-    {
-      "label": "Product",
-      "href": "#product",
-      "cta": false
-    },
-    {
-      "label": "Live Demo",
-      "href": "/demo",
-      "cta": false
-    },
-    {
-      "label": "Documentation",
-      "href": "https://docs.yourbrand.com",
-      "cta": false
-    },
-    {
-      "label": "Open Console",
-      "href": "https://app.yourbrand.com",
-      "cta": true
-    }
+    { "label": "Product", "href": "#product", "cta": false },
+    { "label": "Demo", "href": "/demo", "cta": false },
+    { "label": "Docs", "href": "https://aetheris-docs.vercel.app", "cta": false },
+    { "label": "Open Panel", "href": "https://aetheris-panel.vercel.app", "cta": true }
   ],
   "contact": {
-    "email": "ops@aetheris.enterprise",
-    "supportUrl": "https://support.aetheris.enterprise",
+    "email": "hello@another-horizon.eu",
+    "supportUrl": "https://aetheris-docs.vercel.app/troubleshooting",
     "twitterUrl": "https://x.com/aetheris"
   },
   "seo": {
-    "defaultTitle": "Your Brand - Billing and Virtualization Control Panel",
-    "defaultDescription": "Your brand description.",
+    "defaultTitle": "Aetheris - Billing and Virtualization Control Panel",
+    "defaultDescription": "Open-source platform that converges WHMCS, FOSSBilling, Pterodactyl, Proxmox VE and VirtFusion into a single control panel.",
     "ogImage": "/api/og",
-    "keywords": [
-      "billing platform",
-      "virtualization",
-      "hosting"
-    ]
+    "keywords": ["billing platform", "virtualization", "pterodactyl", "proxmox", "open source"]
   },
   "modules": {
     "billing": true,
