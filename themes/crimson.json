@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "IronVault",
+    "tagline": "Enterprise dedicated server management and billing",
+    "logoUrl": "/brand/your-mark.svg",
+    "logoDarkUrl": "/brand/your-mark.svg",
+    "domain": "ironvault.dev"
+  },
+  "theme": {
+    "accent": "crimson",
+    "radius": 6,
+    "fontFamily": "JetBrains Mono, monospace"
+  },
+  "navigation": [
+    { "label": "Platform", "href": "#platform", "cta": false },
+    { "label": "API", "href": "https://api.ironvault.dev/docs", "cta": false },
+    { "label": "Docs", "href": "https://docs.ironvault.dev", "cta": false },
+    { "label": "Console", "href": "https://app.ironvault.dev", "cta": true }
+  ],
+  "contact": {
+    "email": "ops@ironvault.dev",
+    "supportUrl": "https://ironvault.dev/support",
+    "twitterUrl": "https://x.com/ironvault"
+  },
+  "seo": {
+    "defaultTitle": "IronVault - Enterprise Server Management",
+    "defaultDescription": "Dedicated server provisioning, billing and management for enterprise hosting operations.",
+    "ogImage": "/api/og",
+    "keywords": ["dedicated servers", "enterprise hosting", "server management", "billing platform"]
+  },
+  "modules": {
+    "billing": true,
+    "vncConsole": true,
+    "pterodactyl": true,
+    "proxmox": true,
+    "virtfusion": true,
+    "registrars": true
+  },
+  "integrations": {
+    "stripe": true,
+    "paypal": false,
+    "mollie": true,
+    "namecheap": true,
+    "cloudflare": true,
+    "cpanel": true,
+    "directadmin": true
+  }
+}

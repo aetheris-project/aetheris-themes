@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "CloudStack",
+    "tagline": "Cloud VPS management and billing for the enterprise",
+    "logoUrl": "/brand/your-mark.svg",
+    "logoDarkUrl": "/brand/your-mark.svg",
+    "domain": "cloudstack.io"
+  },
+  "theme": {
+    "accent": "sky",
+    "radius": 10,
+    "fontFamily": ""
+  },
+  "navigation": [
+    { "label": "Platform", "href": "#platform", "cta": false },
+    { "label": "Docs", "href": "https://docs.cloudstack.io", "cta": false },
+    { "label": "Status", "href": "https://status.cloudstack.io", "cta": false },
+    { "label": "Open Console", "href": "https://console.cloudstack.io", "cta": true }
+  ],
+  "contact": {
+    "email": "hello@cloudstack.io",
+    "supportUrl": "https://cloudstack.io/support",
+    "twitterUrl": "https://x.com/cloudstack"
+  },
+  "seo": {
+    "defaultTitle": "CloudStack - Cloud VPS Management Platform",
+    "defaultDescription": "Unified cloud VPS management, billing and provisioning. Powered by Proxmox VE and VirtFusion.",
+    "ogImage": "/api/og",
+    "keywords": ["cloud vps", "vps management", "proxmox ve", "billing platform", "cloud hosting"]
+  },
+  "modules": {
+    "billing": true,
+    "vncConsole": true,
+    "pterodactyl": false,
+    "proxmox": true,
+    "virtfusion": true,
+    "registrars": true
+  },
+  "integrations": {
+    "stripe": true,
+    "paypal": true,
+    "mollie": true,
+    "namecheap": true,
+    "cloudflare": true,
+    "cpanel": false,
+    "directadmin": false
+  }
+}

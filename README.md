@@ -49,11 +49,11 @@
  <p><code>theme.template.css</code> — every required token commented.<br><code>theme.template.json</code> — full whitelabel manifest.</p>
  </td>
  <td width="33%" align="center" valign="top">
- <h3> 5 pre-built</h3>
+ <h3> 8 pre-built</h3>
  <p>
- Emerald (default)<br>
- Indigo · Amber<br>
- Aurora (custom violet + full rebrand example)
+ Emerald (default) · Indigo · Amber<br>
+ Rose · Sky · Crimson<br>
+ Aurora (custom violet + full rebrand)
  </p>
  </td>
  </tr>
@@ -148,9 +148,12 @@ aetheris-themes/
 │ ├── theme.template.css # Fill-in starter with every token + comments
 │ └── theme.template.json# Whitelabel manifest: fonts, logo, copy, accent IDs
 ├── themes/
-│ ├── emerald.json # Platform default accent
+│ ├── emerald.json # Platform default accent (emerald green)
 │ ├── indigo.json # Deep-blue accent
 │ ├── amber.json # Warm amber accent
+│ ├── rose.json # Rose pink accent (game hosting)
+│ ├── sky.json # Sky blue accent (cloud VPS)
+│ ├── crimson.json # Crimson red accent (enterprise, square corners)
 │ ├── aurora.json # Full rebrand example (violet)
 │ └── aurora.css # Aurora token block + light/dark overrides
 ├── tools/
